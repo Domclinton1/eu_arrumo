@@ -14,6 +14,33 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+// Header hide/show on scroll
+let lastScrollY = window.scrollY;
+const header = document.getElementById('main-header');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > lastScrollY) {
+        header.style.transform = 'translateY(-100%)';
+    } else {
+        header.style.transform = 'translateY(0)';
+    }
+    lastScrollY = window.scrollY;
+});
+
+// Toggle mobile menu
+const menuIcon = document.getElementById('menu-icon');
+const navLinks = document.getElementById('nav-links');
+
+menuIcon.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
+document.addEventListener('click', (e) => {
+    if (!navLinks.contains(e.target) && !menuIcon.contains(e.target)) {
+        navLinks.classList.remove('active'); // Fecha o menu ao clicar fora dele
+    }
+});
+
 /*
 // Validação simples do formulário
 document.querySelector('form').addEventListener('submit', function (e) {
