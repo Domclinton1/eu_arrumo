@@ -1,0 +1,399 @@
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;    
+}
+nav {
+    display: flex;
+    gap: 1.8rem;
+    justify-content: space-around;
+    width: 70%;
+    align-items: center;
+}
+nav a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #0078d7;
+}
+nav a:last-child {
+    border-radius: 15px;
+    border: 1px solid #0078d7;
+    padding: 10px;
+    gap: 0.5rem;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+}
+nav a:hover:last-child {
+    color: gold;
+    border: 1px solid gold;
+    letter-spacing: 0.5rem;
+}
+nav a:hover {
+    color: gold;
+    letter-spacing: 0.5rem;
+    transition: 0.5s;
+}
+.logo img {
+    width: 150px;
+}
+/* Hero Section */
+.hero {
+    /*background: linear-gradient(to right, #0078d7, #00c6ff);*/
+    background-image: url(./assets/images/manutenção-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    color: #fff;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+    padding: 60px 20px;
+    
+}
+.hero .container {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 100px auto;
+    
+    
+}
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    width: 80%;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 15px 30px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: rgb(48, 206, 48);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    width: 25%;
+    margin: 0 auto;
+
+}
+
+.cta-button:hover {
+    background-color: rgb(16, 228, 16);
+}
+
+/* Serviços Section */
+.servicos {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.servicos h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #0078d7;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.card img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    filter: drop-shadow(0 0 10px black);
+}
+
+.card h2 {
+    font-size: 1rem;
+    margin: 15px 0;
+    color: #333;
+}
+
+.card p {
+    font-size: 1rem;
+    margin: 10px 0;
+    color: #666;
+}
+
+.card .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #0078d7;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.card .btn:hover {
+    background-color: #005fa3;
+}
+
+/* Por que nos escolher Section */
+.porque-nos {
+    padding: 60px 20px;
+    background-color: #0078d7;
+    color: #fff;
+    text-align: center;
+}
+
+.porque-nos h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.porque-nos ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.porque-nos li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+.pq-container {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    width: 100%;
+    justify-content: center;
+    
+}
+.pq-container ul li {
+    text-align: justify;
+    align-items: center;
+    gap: 1rem;
+    display: flex;
+}
+.pq-container img {
+    width: 300px;
+    filter: drop-shadow(0 0 10px #fff);
+}
+
+
+/* Formulário de Contato */
+.formulario-contato {
+    padding: 60px 20px;
+    background-color: #fff;
+    background-image: url(./assets/images/manutenção-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.formulario-contato h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #0078d7;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #005fa3;
+}
+
+/* Rodapé */
+.rodape {
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+.rodape p {
+    font-size: 0.9rem;
+    margin: 5px 0;
+}
+.rodape a {
+    text-decoration: none;
+    color: #005fa3;
+    margin: 10px;
+    transition: transform 1s ease-out;
+}
+.rodape a:hover {
+    transform: scale(1.2);
+    color: rgb(16, 228, 16);
+}
+
+@media screen and (max-width:450px) {
+    header {
+        max-width: 450px;
+        width: 100%;
+    }
+    header nav a:hover {
+        letter-spacing: 0.2rem;
+    }
+    nav a:hover:last-child {
+        color: gold;
+        border: 1px solid gold;
+        letter-spacing: 0.3rem;
+    }
+    .hero {
+        background-image: url(./assets/images/background-450px.png);
+        background-size: cover; /* Faz a imagem cobrir todo o elemento */
+        background-position: center; /* Centraliza a imagem */
+        background-repeat: no-repeat; /* Evita repetição da imagem */
+        height: 100vh; /* Define a altura como 100% da altura da tela */
+
+    }
+    .hero .container {
+        margin: 0;
+    }
+    .hero .container .cta-button  {
+        width: 75%;
+    }
+    
+    .pq-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .pq-container li {
+        font-size: 18px;
+    }
+    section {
+        max-width: 450px;
+        width: 100%;
+    }
+    .formulario-contato {
+        background-image: url(./assets/images/background-450px.png);
+        background-size: cover; /* Faz a imagem cobrir todo o elemento */
+        background-position: center; /* Centraliza a imagem */
+        background-repeat: no-repeat; /* Evita repetição da imagem */
+       
+    }
+}
+@media screen and (min-width:451px) and (max-width:768px) {
+    header {
+        min-width: 451px;
+        max-width: 768px;
+        width: 100%;
+    }
+    header nav a:hover {
+        letter-spacing: 0.2rem;
+    }
+    nav a:hover:last-child {
+        color: gold;
+        border: 1px solid gold;
+        letter-spacing: 0.3rem;
+    }
+    .hero {
+        background-image: url(./assets/images/background-450px.png);
+        background-size: cover; /* Faz a imagem cobrir todo o elemento */
+        background-position: center; /* Centraliza a imagem */
+        background-repeat: no-repeat; /* Evita repetição da imagem */
+        height: 100vh; /* Define a altura como 100% da altura da tela */
+
+    }
+    
+    .hero .container .cta-button  {
+        width: 50%;
+    }
+    
+    .pq-container {
+        display: flex;
+        flex-direction: column;
+    }
+    section {
+        max-width: 768px;
+        width: 100%;
+    }
+    .formulario-contato {
+        background-image: url(./assets/images/background-450px.png);
+    }
+    
+}
