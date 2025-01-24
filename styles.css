@@ -461,3 +461,111 @@ form button:hover {
     }
     
 }
+
+.main-content {
+    background-image: url(./assets/images/manutenção-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120vh;
+    margin-top: 180px;
+}
+
+.services-list {
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: #ffffff5f;
+    color: #333;
+    width: 50%;
+    margin: 20px auto;
+    padding: 40px;
+}
+.service-item img {
+  width: 32px;  
+}
+.main-content .container {
+    color: #fff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.services-title  {
+    text-shadow: 1px 1px black;
+    margin: 20px;
+    text-align: center;
+    background-color: #1d1d1d5d;
+    border-radius: 15px;
+    padding: 5px;
+    
+
+}
+.services-title h2 {
+    font-size: 30px;
+}
+.services-title p {
+    font-size: 20px;
+}
+.main-content .cta-button {
+    width: 26%;
+}
+
+@media screen and (max-width: 450px) {
+    .main-content {
+        background-image: url(./assets/images/background-450px.png);
+        background-repeat: no-repeat;
+        background-size: 120vh;
+        background-position: center;
+        max-width: 450px;
+        width: 100%;
+        background-attachment: fixed;
+    }
+    .services-list {
+        max-width: 400px;
+        width: 100%;
+        padding: 20px;
+    }
+    .main-content .cta-button {
+        width: 80%;
+    }
+    .services-title {
+        width: 100%;
+        margin: 0;
+    }
+    .services-title h2 {
+        font-size: 25px;
+    }
+    .services-title p {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .main-content {
+        background-image: url(./assets/images/background-450px.png);
+        background-repeat: no-repeat;
+        background-size: 120vh;
+        background-position: center;
+        max-width: 768px;
+        width: 100%;
+        background-attachment: fixed;
+    }
+    .services-list {
+        max-width: 600px;
+        width: 100%;
+        padding: 20px;
+    }
+    .main-content .cta-button {
+        width: 50%;
+    }
+    .services-title {
+        width: 100%;
+        
+    }
+    .services-title h2 {
+        font-size: 30px;
+    }
+    .services-title p {
+        font-size: 20px;
+    }
+}
